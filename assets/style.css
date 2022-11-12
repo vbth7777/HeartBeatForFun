@@ -54,7 +54,7 @@ canvas {
     background-size: 50%;
     /* background-color: #fff; */
     background-color: #000;
-    opacity: 0.1;
+    opacity: 0.2;
 }
 @keyframes flash {
     0% {
