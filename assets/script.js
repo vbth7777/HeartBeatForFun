@@ -9,16 +9,16 @@ function startClicked() {
   startBtn.style.display = "none";
   timeLapseBtn.style.display = "none";
   const canvases = document.querySelectorAll("canvas");
-  for (let i = 0; i < canvases.length; i++) {
-    if (i == 2) {
-      canvases[i].style.display = "none";
-      continue;
-    }
-    canvases[i].style.display = "block";
-  }
-  canvases[0].id = "pinkboard";
-  canvases[1].id = "pinkboard2";
-  canvases[2].id = "flashScreen";
+  //   for (let i = 0; i < canvases.length; i++) {
+  //     if (i == 2) {
+  //       canvases[i].style.display = "none";
+  //       continue;
+  //     }
+  //     canvases[i].style.display = "block";
+  //   }
+  //   canvases[0].id = "pinkboard";
+  //   canvases[1].id = "pinkboard2";
+  //   canvases[2].id = "flashScreen";
   function beatingHeart(canvas, settings = null) {
     if (settings === null) {
       settings = {
@@ -291,7 +291,7 @@ function startClicked() {
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
       }
-      window.onresize = onResize;
+      window.addEventListener("onresize", onResize);
 
       // delay rendering bootstrap
 
