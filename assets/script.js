@@ -348,11 +348,11 @@ function startClicked() {
     }
     await sleep(5000);
     flashScreen();
-    setBackground("/assets/image/icon1.jpg");
+    setBackground("./assets/image/icon1.jpg");
     globalSettings.color = "cyan";
     await sleep(5000);
     flashScreen();
-    setBackground("/assets/image/icon2.jpg");
+    setBackground("./assets/image/icon2.jpg");
     globalSettings.color = "red";
   }, 3000);
   closeBtn.onclick = async function () {
