@@ -16,8 +16,8 @@ function startClicked() {
   //     }
   //     canvases[i].style.display = "block";
   //   }
-  //   canvases[0].id = "pinkboard";
-  //   canvases[1].id = "pinkboard2";
+  //   canvases[0].id = "heart";
+  //   canvases[1].id = "shadowHeart";
   //   canvases[2].id = "flashScreen";
   function beatingHeart(canvas, settings = null) {
     if (settings === null) {
@@ -311,8 +311,8 @@ function startClicked() {
     }, 1500);
   }
   function setAnimationOfHeart() {
-    const heart = document.querySelector("#pinkboard");
-    const heart2 = document.querySelector("#pinkboard2");
+    const heart = document.querySelector("#heart");
+    const heart2 = document.querySelector("#shadowHeart");
     heart.style.animation = "heart 1.5s infinite";
     heart2.style.animation = "fadeIn 1.5s infinite";
     heart2.style.animationDelay = "0.3s";
@@ -324,9 +324,9 @@ function startClicked() {
     background.style.backgroundRepeat = "no-repeat";
   }
 
-  beatingHeart(document.querySelector("#pinkboard"));
+  beatingHeart(document.querySelector("#heart"));
 
-  beatingHeart(document.querySelector("#pinkboard2"), {
+  beatingHeart(document.querySelector("#shadowHeart"), {
     particles: {
       length: 500, // maximum amount of particles
       effect: 5, // play with this for a nice effect
@@ -357,8 +357,8 @@ function startClicked() {
   }, 3000);
   closeBtn.onclick = async function () {
     globalSettings.isClosing = true;
-    document.querySelector("#pinkboard2").style.display = "none";
-    const heart = document.querySelector("#pinkboard");
+    document.querySelector("#shadowHeart").style.display = "none";
+    const heart = document.querySelector("#heart");
     heart.style.animationPlayState = "paused";
     beatingHeart(heart, {
       particles: {

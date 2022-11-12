@@ -15,7 +15,7 @@ canvas {
     left:20%;
 }
 
-#pinkboard {
+#heart {
     /* top: 50%;
         left: 50%; */
     z-index: 2;
@@ -24,7 +24,7 @@ canvas {
     transform: translate(-100%, -100%);
     /* animation: heart 1.5s ease infinite; */
 }
-#pinkboard2 {
+#shadowHeart {
     /* top: 50%;
         left: 50%; */
     z-index: 1;
